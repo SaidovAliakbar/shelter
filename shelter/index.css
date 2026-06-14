@@ -170,5 +170,10 @@ nav {
     height: 52px;
     background-color: #F1CDB3;
     border-radius: 100px;
+    transition: 150ms;
 }
 
+.start_screen__btn:hover {
+    background: #fddcc4;
+    cursor: pointer;
+}
