@@ -4,6 +4,7 @@
     --dark-s: #cdcdcd;
     --dark-l: #545454;
     --dark-3xl: #292929;
+    --dark-m: #B2B2B2;
 }
 
 @font-face {
@@ -359,7 +360,7 @@ nav {
     padding: 80px 127px 100px 127px;
 }
 
-.help > h2 {
+.help>h2 {
     font-size: 35px;
     line-height: 130%;
     font-family: 'Georgia';
@@ -396,15 +397,94 @@ nav {
     gap: 30px;
 }
 
-.help__item > img {
+.help__item>img {
     height: 60px;
     width: 60px;
 }
 
-.help__item > p {
+.help__item>p {
     font-size: 20px;
     line-height: 115%;
     color: var(--dark-l);
     font-family: 'Georgia';
     letter-spacing: 0.06em;
+}
+
+.donation {
+    background-color: #f6f6f6;
+}
+
+.donation_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 462px;
+    padding: 80px 182px 100px 182px;
+}
+
+.donation_content {
+    display: flex;
+    align-items: center;
+    width: 915px;
+    height: 282px;
+    gap: 30px;
+}
+
+.donation_img {
+    width: 505px;
+    height: 261px;
+}
+
+.bank_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 282px;
+    width: 380px;
+}
+
+.bank_content>h2 {
+    font-size: 35px;
+    line-height: 130%;
+    color: var(--dark-l);
+    letter-spacing: 0.06em;
+    font-family: 'Georgia';
+    font-weight: 400;
+}
+
+.bank_desc {
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--dark-l);
+    font-family: 'Georgia';
+    font-weight: 400;
+}
+
+.card_number {
+    width: 349px;
+    height: 43px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    border-radius: 9px;
+}
+
+.card_number > h4 {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    color: var(--dark-l);
+    letter-spacing: 0.055em;
+}
+
+.legal_info {
+    font-size: 12px;
+    color: var(--dark-m);
+    font-family: 'Arial';
+    font-weight: 400;
+    font-style: italic;
+    line-height: 18px;
 }
