@@ -67,11 +67,8 @@ header {
 }
 
 .logo {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: inline;
     height: 100%;
-    align-items: end;
 }
 
 .header__title {
@@ -90,6 +87,15 @@ header {
     color: #fff;
     letter-spacing: 0.1em;
     height: 15px;
+}
+
+.logo__link {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    text-decoration: none;
+    height: 100%;
 }
 
 nav {
