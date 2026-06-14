@@ -471,7 +471,7 @@ nav {
     border-radius: 9px;
 }
 
-.card_number > h4 {
+.card_number>h4 {
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 20px;
@@ -487,4 +487,55 @@ nav {
     font-weight: 400;
     font-style: italic;
     line-height: 18px;
+}
+
+footer {
+    background: url(./images/noise_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    height: 350px;
+}
+
+.footer_container {
+    max-width: 1280px;
+    padding: 40px 40px 0 40px;
+    display: flex;
+    gap: 160px;
+    margin: 0 auto;
+}
+
+.contacts {
+    margin-top: 16px;
+    width: 278px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address_content {
+    margin-top: 16px;
+    width: 302px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_container h2 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 130%;
+    font-family: 'Georgia';
+    font-weight: 400;
+    letter-spacing: 0.055em;
+}
+
+.footer_container p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--primary-color);
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
 }
