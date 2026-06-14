@@ -145,6 +145,7 @@ nav>.nav__items a {
 .nav__items>.nav__active {
     border-bottom-color: var(--primary-color);
     color: #fff;
+    cursor: none;
 }
 
 .start_screen__content {
@@ -203,6 +204,10 @@ nav>.nav__items a {
 .start_screen__btn:hover {
     background: #fddcc4;
     cursor: pointer;
+}
+
+.start_screen__btn:active {
+    opacity: 80%;
 }
 
 .about {
@@ -303,15 +308,18 @@ nav>.nav__items a {
     width: 270px;
     height: 435px;
     background-color: #fff;
-}
-
-.pet_card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     font-family: 'Georgia';
     font-weight: 400;
+    transition: 150ms;
+}
+
+.pet_card:hover {
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
 }
 
 .pet_card__name {
@@ -344,6 +352,14 @@ nav>.nav__items a {
     transition: 150ms;
 }
 
+.pet_card>button:active {
+    opacity: 80%;
+}
+
+.our_friends__btn a {
+    color: var(--dark-3xl);
+}
+
 .our_friends__btn {
     display: flex;
     align-items: center;
@@ -358,9 +374,17 @@ nav>.nav__items a {
     font-size: 17px;
     font-family: 'Georgia';
     font-weight: 400;
-    color: var(--dark-3xl);
     letter-spacing: 0.055em;
     cursor: pointer;
+    transition: 150ms;
+}
+
+.our_friends__btn:hover {
+    background-color: #fddcc4;
+}
+
+.our_friends__btn:active {
+    opacity: 80%;
 }
 
 .help {
@@ -488,8 +512,21 @@ nav>.nav__items a {
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
-    color: var(--dark-l);
     letter-spacing: 0.055em;
+    
+}
+
+.card_number>h4>a:hover {
+    color: var(--dark-3xl);
+}
+
+.card_number>h4>a:active {
+    opacity: 80%;
+}
+
+.card_number>h4>a {
+    color: var(--dark-l);
+    transition: 150ms;
 }
 
 .legal_info {
