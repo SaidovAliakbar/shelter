@@ -349,3 +349,62 @@ nav {
     letter-spacing: 0.055em;
     cursor: pointer;
 }
+
+.help {
+    height: 611px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 127px 100px 127px;
+}
+
+.help > h2 {
+    font-size: 35px;
+    line-height: 130%;
+    font-family: 'Georgia';
+    font-weight: 400;
+    text-align: center;
+    color: var(--dark-l);
+    letter-spacing: 0.06em;
+}
+
+.help_list {
+    width: 1026px;
+    height: 281px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.help_list__first,
+.help_list__second {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.help_list__second {
+    margin: 55px 84px 0 84px;
+}
+
+.help__item {
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.help__item > img {
+    height: 60px;
+    width: 60px;
+}
+
+.help__item > p {
+    font-size: 20px;
+    line-height: 115%;
+    color: var(--dark-l);
+    font-family: 'Georgia';
+    letter-spacing: 0.06em;
+}
