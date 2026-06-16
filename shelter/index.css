@@ -127,7 +127,11 @@ a {
     user-select: none;
 }
 
-nav>.nav__items a {
+.nav__items a:not(.nav__active>a) {
+    color: var(--dark-s);
+}
+
+nav>.nav__items li {
     color: var(--dark-s);
     transition: 100ms;
     border-bottom: 3.5px solid transparent;
@@ -138,8 +142,12 @@ nav>.nav__items a {
     color: #fff;
 }
 
-.nav__items a:active {
+.nav__items li:active {
     border-bottom-color: var(--primary-color);
+}
+
+.nav__active>a {
+    color: #fff;
 }
 
 .nav__items>.nav__active {
@@ -178,12 +186,9 @@ nav>.nav__items a {
     font-family: 'Arial';
 }
 
-.start_screen__btn a {
-    color: #292929;
-}
-
 .start_screen__btn {
     /* Text */
+    color: #292929;
     text-decoration: none;
     font-family: 'Georgia';
     font-size: 17px;
@@ -222,6 +227,8 @@ nav>.nav__items a {
 
 .about__img {
     margin: 80px 0 0 215px;
+    width: 300px;
+    height: 408px;
 }
 
 .about__content {
@@ -357,11 +364,8 @@ nav>.nav__items a {
     opacity: 80%;
 }
 
-.our_friends__btn a {
-    color: var(--dark-3xl);
-}
-
 .our_friends__btn {
+    color: var(--dark-3xl);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -514,7 +518,7 @@ nav>.nav__items a {
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.055em;
-    
+
 }
 
 .card_number>h3>a:hover {
