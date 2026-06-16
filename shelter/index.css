@@ -145,7 +145,8 @@ nav>.nav__items a {
 .nav__items>.nav__active {
     border-bottom-color: var(--primary-color);
     color: #fff;
-    cursor: none;
+    cursor: default;
+    pointer-events: none;
 }
 
 .start_screen__content {
@@ -319,7 +320,7 @@ nav>.nav__items a {
 
 .pet_card:hover {
     cursor: pointer;
-    border: 2px solid var(--primary-color);
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.08);
 }
 
 .pet_card__name {
