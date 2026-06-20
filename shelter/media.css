@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 1100px) {
+    .start_screen {
+        max-height: 1165px;
+    }
     .start_screen__content {
         flex-wrap: wrap;
         justify-content: center;
@@ -22,11 +25,24 @@
         margin: 0;
     }
 
+    .start_screen__btn {
+        margin-inline: auto;
+    }
+
     .about {
+        max-height: 1049px;
         flex-wrap: wrap;
         flex-direction: column;
         padding: 80px 0 100px 0;
         gap: 80px;
+    }
+
+    .about__content {
+        max-height: 380px;
+    }
+
+    .our_friends {
+        max-height: 877px;
     }
 
     .our_friends__slider {
@@ -40,6 +56,11 @@
 
     .our_friends__slider__cards {
         justify-content: space-between;
+        gap: 40px;
+    }
+
+    .help {
+        padding: 80px 69px 100px;
     }
 
     .help__item:nth-child(6) {
@@ -48,5 +69,41 @@
 
     .help__item:nth-child(9) {
         margin: 0;
+    }
+
+    .help_list {
+        display: grid;
+        grid-template-columns: repeat(3, 170px);
+        column-gap: 60px;
+    }
+
+    .donation_container {
+        padding: 0;
+        max-height: 783px;
+    }
+    
+    .donation_content {
+        margin: 0 auto;
+        padding: 80px 0 100px 0;
+        gap: 60px;
+        flex-direction: column-reverse;
+    }
+
+    .footer_container {
+        margin: 0;
+        padding: 30px 0 0 0;
+        gap: 65px 60px;
+        justify-content: center;
+        gap: 65px;
+    }
+
+    .footer_img {
+        margin-inline: auto;
+    }
+
+    .contacts,
+    .address_content {
+        margin: 0;
+        max-height: 234px;
     }
 }

@@ -315,7 +315,7 @@ nav>.nav__items li {
     display: flex;
     max-width: 990px;
     width: 100%;
-    gap: clamp(40px, 7vw, 90px);
+    gap: 90px;
 }
 
 .pet_card {
@@ -476,14 +476,10 @@ nav>.nav__items li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     max-width: 915px;
     height: auto;
     gap: 30px;
-}
-
-.donation_img {
-    max-width: 100%;
-    height: auto;
 }
 
 .bank_content {
@@ -566,7 +562,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* gap: 160px; */
 }
 
 footer a:hover {
@@ -578,7 +573,6 @@ footer a:active {
     opacity: 70%;
     transition: 150ms;
 }
-
 
 .contacts {
     margin-top: 16px;
