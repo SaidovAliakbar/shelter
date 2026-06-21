@@ -532,7 +532,7 @@ nav>.nav__items li {
     border-radius: 9px;
 }
 
-.card_number>h4 {
+.card_number>h3 {
     font-family: 'Georgia';
     font-weight: 400;
     font-size: clamp(15px, 2.8vw, 20px);
@@ -540,15 +540,15 @@ nav>.nav__items li {
     letter-spacing: 0.06em;
 }
 
-.card_number>h4>a:hover {
+.card_number>h3>a:hover {
     color: var(--dark-3xl);
 }
 
-.card_number>h4>a:active {
+.card_number>h3>a:active {
     opacity: 80%;
 }
 
-.card_number>h4>a {
+.card_number>h3>a {
     color: var(--dark-l);
     transition: 150ms;
 }
