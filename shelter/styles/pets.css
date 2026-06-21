@@ -61,19 +61,32 @@ a {
     text-decoration: none;
 }
 
+.burger {
+    display: none;
+}
+
+.burger_line {
+    width: 30px;
+    height: 0;
+    border: 1px solid var(--primary-color);
+}
+
 header {
     display: flex;
     align-items: center;
     padding: 0 40px 0 40px;
     max-width: 1280px;
-    height: 120px;
     margin: 0 auto;
     justify-content: space-between;
 }
 
 .logo {
     display: inline;
-    height: 60px;
+    margin: 30px 0;
+}
+
+.logo>a {
+    gap: 10px;
 }
 
 .header__title {
@@ -103,10 +116,8 @@ header {
     height: 100%;
 }
 
-
 nav {
     display: inline-flex;
-    width: 443px;
 }
 
 .nav__items {
@@ -156,8 +167,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 60px;
-    width: 1200px;
-    height: 1342px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -168,7 +178,7 @@ main {
 
 .pets>h1 {
     color: var(--dark-l);
-    font-size: 35px;
+    font-size: clamp(25px, 6vw, 35px);
     font-weight: 400;
     line-height: 130%;
     text-align: center;
@@ -181,13 +191,14 @@ main {
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 28px;
 }
 
 .pet_card_container {
     display: flex;
+    justify-content: center;
     margin-top: 30px;
-    gap: 30px;
+    gap: 30px 40px;
 }
 
 .pet_card {
@@ -209,18 +220,6 @@ main {
 
 .pet_card:active {
     opacity: 80%;
-}
-
-.pets_first {
-    display: flex;
-    height: 435px;
-    gap: 40px;
-}
-
-.pets_second {
-    display: flex;
-    height: 435px;
-    gap: 40px;
 }
 
 .pet_card>p {
@@ -308,45 +307,55 @@ main {
 
 footer {
     background: url(./images/noise_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .footer_container {
-    max-width: 1280px;
-    padding: 40px 40px 0 40px;
+    width: 1200px;
+    margin: 40px 40px 0 40px;
     display: flex;
-    gap: 160px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer a:hover {
+    opacity: 80%;
+    transition: 150ms;
+}
+
+footer a:active {
+    opacity: 70%;
+    transition: 150ms;
 }
 
 .contacts {
     margin-top: 16px;
     width: 278px;
-    height: 234px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .address_content {
     margin-top: 16px;
     width: 302px;
-    height: 234px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 32px;
 }
 
-.footer_container h2 {
+.footer_container h3 {
     color: #fff;
-    font-size: 35px;
+    font-size: clamp(25px, 6vw, 35px);
     line-height: 130%;
     font-family: 'Georgia';
     font-weight: 400;
     letter-spacing: 0.055em;
 }
 
-.footer_container p {
+.footer_container h4 {
     display: flex;
     align-items: center;
     gap: 20px;
