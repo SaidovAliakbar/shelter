@@ -1,334 +1,334 @@
-@media (max-width: 1230px) {
-    .container {
-        padding: 0 30px 0 30px;
-    }
-}
-
 @media (max-width: 1100px) {
-    .about {
-        max-height: 1049px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding: 80px 0 100px 0;
-        gap: 80px;
-    }
+  .about {
+    max-height: 1049px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 80px 0 100px 0;
+    gap: 80px;
+  }
 
-    .about__content {
-        max-height: 380px;
-    }
+  .about__content {
+    max-height: 380px;
+  }
 
-    .our_friends {
-        max-height: 877px;
-    }
+  .our_friends {
+    max-height: 877px;
+  }
 
-    .our_friends__slider {
-        padding: 0 30px 0 30px;
-        gap: 12px;
-    }
+  .our_friends__slider {
+    padding: 0 30px 0 30px;
+    gap: 12px;
+  }
 
-    .pet_card:nth-child(3) {
-        display: none;
-    }
+  .pet_card:nth-child(3) {
+    display: none;
+  }
 
-    .our_friends__slider__cards {
-        justify-content: space-between;
-        gap: 40px;
-    }
+  .our_friends__slider__cards {
+    justify-content: space-between;
+    gap: 40px;
+  }
 
-    .help {
-        padding: 80px 69px 100px;
-    }
+  .help {
+    padding: 80px 69px 100px;
+  }
 
-    .help__item:nth-child(6) {
-        margin: 0;
-    }
+  .help__item:nth-child(6) {
+    margin: 0;
+  }
 
-    .help__item:nth-child(9) {
-        margin: 0;
-    }
+  .help__item:nth-child(9) {
+    margin: 0;
+  }
 
-    .help_list {
-        display: grid;
-        grid-template-columns: repeat(3, 170px);
-        column-gap: 60px;
-    }
+  .help_list {
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    column-gap: 60px;
+  }
 
-    .donation_container {
-        padding: 0;
-        max-height: 783px;
-    }
+  .donation_container {
+    max-height: 783px;
+  }
 
-    .donation_content {
-        margin: 0 auto;
-        padding: 80px 0 100px 0;
-        gap: 60px;
-        flex-direction: column-reverse;
-    }
+  .donation_content {
+    margin: 0 auto;
+    gap: 60px;
+    flex-direction: column-reverse;
+  }
 
-    .footer_container {
-        margin: 0;
-        padding: 30px 0 0 0;
-        gap: 65px 60px;
-        justify-content: center;
-        gap: 65px;
-    }
+  .footer_container {
+    margin: 0;
+    padding: 30px 0 0 0;
+    gap: 65px 60px;
+    justify-content: center;
+    gap: 65px;
+  }
 
-    .footer_img {
-        margin-inline: auto;
-    }
+  .footer_img {
+    margin-inline: auto;
+  }
 
-    .contacts,
-    .address_content {
-        margin: 0;
-        max-height: 234px;
-    }
+  .contacts,
+  .address_content {
+    margin: 0;
+    max-height: 234px;
+  }
 }
 
 @media (max-width: 830px) {
-    .start_screen {
-        max-height: 1165px;
-    }
+  .start_screen {
+    max-height: 1165px;
+  }
 
-    .start_screen__content {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 60px;
-        gap: 100px;
-    }
+  .start_screen__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 100px;
+  }
 
-    .start_screen__img {
-        width: 569px;
-        height: 593px;
-        margin-left: auto;
-    }
+  .start_screen__img {
+    width: clamp(
+      260px,
+      260px + (569 - 260) * (100vw - 320px) / (768 - 320),
+      569px
+    );
+    height: clamp(
+      271px,
+      271px + (593 - 271) * (100vw - 320px) / (768 - 320),
+      593px
+    );
+    margin-left: auto;
+  }
 
-    .start_screen__content__main {
-        margin: 0;
-    }
+  .start_screen__content__main {
+    margin: 0;
+  }
 
-    .start_screen__btn {
-        margin-inline: auto;
-    }
+  .start_screen__btn {
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 767px) {
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    .burger {
-        display: flex;
-        gap: 8px;
-        flex-direction: column;
-    }
+  .container {
+    padding: 30px
+      clamp(10px, 10px + (30 - 10) * (100vw - 320px) / (768 - 320), 30px) 0px
+      clamp(10px, 10px + (30 - 10) * (100vw - 320px) / (768 - 320), 30px);
+  }
 
-    .our_friends__slider {
-        display: grid;
-        grid-template-columns: 0 auto 0;
-        grid-template-rows: auto auto;
-        row-gap: 20px;
-    }
+  header {
+    align-items: center;
+    padding: 0 10px;
+  }
 
-    .pet_card:nth-child(2) {
-        display: none;
-    }
+  .burger {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
 
-    .our_friends__slider__cards {
-        grid-column: 2;
-        grid-row: 1;
-        gap: 40px;
-    }
+  .our_friends__slider {
+    display: grid;
+    grid-template-columns: 0 auto 0;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+  }
 
-    .our_firends__slider__btn:first-child {
-        grid-column: 2;
-        grid-row: 2;
-        justify-self: end;
-        margin-right: 40px;
-    }
+  .pet_card:nth-child(2) {
+    display: none;
+  }
 
-    .our_firends__slider__btn:last-child {
-        grid-column: 2;
-        grid-row: 2;
-        justify-self: start;
-        margin-left: 40px;
-    }
+  .our_friends__slider__cards {
+    grid-column: 2;
+    grid-row: 1;
+    gap: 40px;
+  }
+
+  .our_firends__slider__btn:first-child {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    margin-right: 40px;
+  }
+
+  .our_firends__slider__btn:last-child {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    margin-left: 40px;
+  }
+
+  .donation_container {
+    padding: clamp(42px, 42px + (80 - 42) * (100vw - 320px) / (768 - 320), 80px)
+      clamp(20px, 20px + (30 - 20) * (100vw - 320px) / (768 - 320), 30px)
+      clamp(42px, 42px + (100 - 42) * (100vw - 320px) / (768 - 320), 100px);
+  }
 }
 
 @media (max-width: 630px) {
+  .about {
+    padding: 42px 10px;
+    max-height: none;
+    gap: 42px;
+  }
 
-    .container {
-        padding: 0 10px 0 10px;
-    }
+  .about__img {
+    padding: 0 20px;
+  }
 
-    header {
-        align-items: center;
-        padding: 30px 10px 0 10px;
-    }
+  .about__content {
+    padding: 0 15px;
+    text-align: justify;
+    gap: 22px;
+    max-height: none;
+    max-width: none;
+  }
 
-    .about {
-        padding: 42px 10px;
-        max-height: none;
-        gap: 42px;
-    }
+  .about__content > h2 {
+    text-align: center;
+    padding-bottom: 3px;
+  }
 
-    .about__img {
-        padding: 0 20px;
-    }
+  .start_screen__content {
+    gap: 105px;
+  }
 
-    .about__content {
-        padding: 0 15px;
-        text-align: justify;
-        gap: 22px;
-        max-height: none;
-        max-width: none;
-    }
+  .start_screen__content__main > h1 {
+    max-width: 300px;
+    width: 100%;
+    letter-spacing: 0.06em;
+  }
 
-    .about__content>h2 {
-        text-align: center;
-        padding-bottom: 3px;
-    }
+  .start_screen__content__main > h1,
+  .start_screen__desc {
+    text-align: center;
+  }
 
-    .start_screen__content {
-        gap: 105px;
-    }
+  .start_screen__content__main {
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+  }
 
-    .start_screen__content__main>h1 {
-        max-width: 300px;
-        width: 100%;
-        letter-spacing: 0.06em;
-    }
+  .our_friends {
+    max-height: 791px;
+  }
 
-    .start_screen__content__main>h1,
-    .start_screen__desc {
-        text-align: center;
-    }
+  .our_friends__container {
+    padding: 40px 10px;
+    gap: 42px;
+  }
 
-    .start_screen__content__main {
-        align-items: center;
-        max-width: 300px;
-        width: 100%;
-    }
+  .our_friends__slider {
+    padding: 0;
+  }
 
-    .start_screen__img {
-        width: 260px;
-        height: 271px;
-    }
+  .help_list {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 30px;
+    margin: 0;
+    row-gap: 30px;
+    max-width: none;
+    justify-content: space-between;
+  }
 
+  .help {
+    gap: 42px;
+    padding: 44px 15px;
+    max-height: 974px;
+  }
 
-    .our_friends {
-        max-height: 791px;
-    }
+  .donation_img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 1;
+    min-width: 0;
+  }
 
-    .our_friends__container {
-        padding: 40px 10px;
-        gap: 42px;
-    }
+  .help__item > h4 {
+    line-height: 110%;
+    letter-spacing: 0.05em;
+  }
 
-    .our_friends__slider {
-        padding: 0;
-    }
+  .help__item {
+    gap: 20px;
+    height: auto;
+    width: 130px;
+  }
 
-    .help_list {
-        grid-template-columns: repeat(2, auto);
-        column-gap: 30px;
-        margin: 0;
-        row-gap: 30px;
-        max-width: none;
-        justify-content: space-between;
-    }
+  .help_item__img {
+    width: 50px;
+    height: 50px;
+  }
 
-    .help {
-        gap: 42px;
-        padding: 44px 15px;
-        max-height: 974px;
-    }
+  .bank_content > h2 {
+    text-align: center;
+  }
 
-    .donation_img {
-        max-width: 100%;
-        height: auto;
-        flex-shrink: 1;
-        min-width: 0;
-    }
+  .donation_content {
+    gap: 42px;
+  }
 
-    .help__item>h4 {
-        line-height: 110%;
-        letter-spacing: 0.05em;
-    }
+  .bank_desc {
+    letter-spacing: 0;
+    line-height: 24px;
+    max-width: 273px;
+    text-align: center;
+  }
 
-    .help__item {
-        gap: 20px;
-        height: auto;
-        width: 130px;
-    }
+  .bank_content {
+    width: 281px;
+    align-items: center;
+  }
 
-    .help_item__img {
-        width: 50px;
-        height: 50px;
-    }
+  .legal_info {
+    text-align: justify;
+  }
 
-    .bank_content>h2 {
-        text-align: center;
-    }
+  footer {
+    justify-content: normal;
+  }
 
-    .donation_content {
-        padding: 42px 20px;
-        gap: 42px;
-    }
+  .footer_container h3 {
+    text-align: center;
+    max-width: 270px;
+    margin-inline: auto;
+  }
 
-    .bank_desc {
-        letter-spacing: 0;
-        line-height: 24px;
-        max-width: 273px;
-        text-align: center;
-    }
+  .footer_container {
+    padding: 0;
+    margin: 28px 10px 0 10px;
+    justify-content: center;
+    gap: 40px;
+  }
 
-    .bank_content {
-        width: 281px;
-        align-items: center;
-    }
+  .contacts {
+    padding: 0 11px;
+    align-items: center;
+    height: auto;
+    max-height: none;
+  }
 
-    .legal_info {
-        text-align: justify;
-    }
+  .address_content {
+    gap: 40px;
+    height: auto;
+    max-height: none;
+  }
 
-    footer {
-        justify-content: normal;
-    }
-
-    .footer_container h3 {
-        text-align: center;
-        max-width: 270px;
-        margin-inline: auto;
-    }
-
-    .footer_container {
-        padding: 0;
-        margin: 28px 10px 0 10px;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .contacts {
-        padding: 0 11px;
-        align-items: center;
-        height: auto;
-        max-height: none;
-    }
-
-    .address_content {
-        gap: 40px;
-        height: auto;
-        max-height: none;
-    }
-
-    .footer_img {
-        width: 260px;
-        height: 269px;
-    }
+  .footer_img {
+    width: 260px;
+    height: 269px;
+  }
 }
 
 @media (max-width: 350px) {
-    .donation_img {
-        height: 135px;
-    }
+  .donation_img {
+    height: 135px;
+  }
 }
