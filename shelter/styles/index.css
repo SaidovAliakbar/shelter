@@ -62,9 +62,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    padding-top: 30px;
-    margin: 0px clamp(30px, 30px + (40 - 30) * (100vw - 768px) / (1280 - 768), 40px);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px clamp(30px, 30px + (40 - 30) * (100vw - 768px) / (1280 - 768), 40px) 0px clamp(30px, 30px + (40 - 30) * (100vw - 768px) / (1280 - 768), 40px);
 }
 
 .start_screen {
@@ -181,7 +181,7 @@ nav>.nav__items li {
 
 .start_screen__content {
     display: inline-flex;
-    margin-top: 90px;
+    margin-top: clamp(60px, 60px + (90 - 60) * (100vw - 768px) / (1280 - 768), 90px);
     justify-content: space-between;
     width: 100%;
 }
@@ -482,7 +482,7 @@ nav>.nav__items li {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    padding: 80px 182px 100px 182px;
+    padding: 80px clamp(30px, 30px + (40 - 30) * (100vw - 768px) / (1280 - 768), 40px) 100px;
 }
 
 .donation_content {
@@ -490,7 +490,6 @@ nav>.nav__items li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 915px;
     height: auto;
     gap: 30px;
 }
