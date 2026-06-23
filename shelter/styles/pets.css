@@ -235,7 +235,6 @@ main {
     justify-content: center;
     padding: 15px 45px;
     gap: 10px;
-    width: 187px;
     height: 52px;
     border: 2px solid var(--primary-color);
     border-radius: 100px;
