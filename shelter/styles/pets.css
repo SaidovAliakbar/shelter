@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Georgia";
-  src: url("../fonts/georgia-regular.woff2") format("woff2");
+  src: url("../assets/fonts/georgia-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "Georgia";
-  src: url("../fonts/georgia-italic.woff2") format("woff2");
+  src: url("../assets/fonts/georgia-italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: "Georgia";
-  src: url("../fonts/georgia-bold.woff2") format("woff2");
+  src: url("../assets/fonts/georgia-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: "Arial";
-  src: url("../fonts/arial-regular.woff2") format("woff2");
+  src: url("../assets/fonts/arial-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
   font-family: "Arial";
-  src: url("../fonts/arial-italic.woff2") format("woff2");
+  src: url("../assets/fonts/arial-italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -396,7 +396,7 @@ main {
 
 footer {
   background:
-    url(../images/noise_transparent.png),
+    url(../assets/images/noise_transparent.png),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
     #211f20;
   width: 100%;
