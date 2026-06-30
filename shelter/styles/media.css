@@ -20,12 +20,11 @@
     gap: 12px;
   }
 
-  .pet_card:nth-child(3) {
-    display: none;
+  .our_friends__slider__cards {
+    justify-content: center;
   }
 
-  .our_friends__slider__cards {
-    justify-content: space-between;
+  .card_group {
     gap: 40px;
   }
 
@@ -146,27 +145,26 @@
     row-gap: 20px;
   }
 
-  .pet_card:nth-child(2) {
-    display: none;
+  .card_group {
+    gap: 40px;
   }
 
   .our_friends__slider__cards {
     grid-column: 2;
     grid-row: 1;
-    gap: 40px;
   }
 
   .our_firends__slider__btn:first-child {
     grid-column: 2;
     grid-row: 2;
-    justify-self: end;
+    justify-self: start;
     margin-right: 40px;
   }
-
+  
   .our_firends__slider__btn:last-child {
     grid-column: 2;
     grid-row: 2;
-    justify-self: start;
+    justify-self: end;
     margin-left: 40px;
   }
 
