@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/media.css" />
     <script src="./scripts/burger.js" defer></script>
+    <script type="module" src="./scripts/carousel.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelter</title>
@@ -60,7 +61,7 @@
             <a href="#friends" class="start_screen__btn">Make a friend</a>
           </div>
           <img
-            src="./images/start-screen-puppy.png"
+            src="./assets/images/start-screen-puppy.png"
             alt="Dog"
             class="start_screen__img"
           />
@@ -90,7 +91,11 @@
           hardly ever leave them alone.
         </p>
       </div>
-      <img src="./images/about-pets.png" alt="Dog and cat" class="about__img" />
+      <img
+        src="./assets/images/about-pets.png"
+        alt="Dog and cat"
+        class="about__img"
+      />
     </section>
     <section class="our_friends" id="friends">
       <div class="our_friends__container">
@@ -99,29 +104,37 @@
           are looking for a house
         </h3>
 
+        <template id="pet-card-template">
+          <div class="pet_card">
+            <img class="pet_card__img" alt="" />
+            <p class="pet_card__name"></p>
+            <button>Learn more</button>
+          </div>
+        </template>
+
         <div class="our_friends__slider">
-          <button class="our_firends__slider__btn">
-            <img src="./images/Arrow.svg" alt="Left arrow" />
+          <button class="our_firends__slider__btn prev">
+            <img src="./assets/images/Arrow.svg" alt="Left arrow" />
           </button>
           <div class="our_friends__slider__cards">
-            <div class="pet_card">
-              <img src="./images/pets-katrine.png" alt="Cat Katrine" />
+            <!-- <div class="pet_card">
+              <img src="./assets/images/pets-katrine.png" alt="Cat Katrine" />
               <p class="pet_card__name">Katrine</p>
               <button>Learn more</button>
             </div>
             <div class="pet_card">
-              <img src="./images/pets-jennifer.png" alt="Puppy Jennifer" />
+              <img src="./assets/images/pets-jennifer.png" alt="Puppy Jennifer" />
               <p class="pet_card__name">Jennifer</p>
               <button>Learn more</button>
             </div>
             <div class="pet_card">
-              <img src="./images/pets-woody.png" alt="Dog Woody" />
+              <img src="./assets/images/pets-woody.png" alt="Dog Woody" />
               <p class="pet_card__name">Woody</p>
               <button>Learn more</button>
-            </div>
+            </div> -->
           </div>
-          <button class="our_firends__slider__btn">
-            <img src="./images/Arrow-right.svg" alt="Right arrow" />
+          <button class="our_firends__slider__btn next">
+            <img src="./assets/images/Arrow-right.svg" alt="Right arrow" />
           </button>
         </div>
 
@@ -136,7 +149,7 @@
       <div class="help_list">
         <div class="help__item">
           <img
-            src="./images/icon-pet-food.svg"
+            src="./assets/images/icon-pet-food.svg"
             alt="Pet food"
             class="help_item__img"
           />
@@ -144,19 +157,23 @@
         </div>
         <div class="help__item">
           <img
-            src="./images/icon-transportation.svg"
+            src="./assets/images/icon-transportation.svg"
             alt="Transportation"
             class="help_item__img"
           />
           <h4>Transportation</h4>
         </div>
         <div class="help__item">
-          <img src="./images/icon-toys.svg" alt="Toys" class="help_item__img" />
+          <img
+            src="./assets/images/icon-toys.svg"
+            alt="Toys"
+            class="help_item__img"
+          />
           <h4>Toys</h4>
         </div>
         <div class="help__item">
           <img
-            src="./images/icon-bowls-and-cups.svg"
+            src="./assets/images/icon-bowls-and-cups.svg"
             alt="bowls-and-cups"
             class="help_item__img"
           />
@@ -164,7 +181,7 @@
         </div>
         <div class="help__item">
           <img
-            src="./images/icon-shampoos.svg"
+            src="./assets/images/icon-shampoos.svg"
             alt="Shampoos"
             class="help_item__img"
           />
@@ -172,7 +189,7 @@
         </div>
         <div class="help__item">
           <img
-            src="./images/icon-vitamins.svg"
+            src="./assets/images/icon-vitamins.svg"
             alt="Vitamins"
             class="help_item__img"
           />
@@ -180,7 +197,7 @@
         </div>
         <div class="help__item">
           <img
-            src="./images/icon-medicines.svg"
+            src="./assets/images/icon-medicines.svg"
             alt="Medicines"
             class="help_item__img"
           />
@@ -188,7 +205,7 @@
         </div>
         <div class="help__item">
           <img
-            src="./images/icon-collars-leashes.svg"
+            src="./assets/images/icon-collars-leashes.svg"
             alt="Collars / leashes"
             class="help_item__img"
           />
@@ -196,7 +213,7 @@
         </div>
         <div class="help__item">
           <img
-            src="./images/icon-sleeping-area.svg"
+            src="./assets/images/icon-sleeping-area.svg"
             alt="Sleeping area"
             class="help_item__img"
           />
@@ -207,7 +224,11 @@
     <section class="donation">
       <div class="donation_container">
         <div class="donation_content">
-          <img src="./images/donation-dog.png" alt="Dog" class="donation_img" />
+          <img
+            src="./assets/images/donation-dog.png"
+            alt="Dog"
+            class="donation_img"
+          />
           <div class="bank_content">
             <h2>
               You can also <br />
@@ -215,7 +236,10 @@
             </h2>
             <p class="bank_desc">Name of the bank / Type of bank account</p>
             <div class="card_number">
-              <img src="./images/credit-card.svg" alt="credit-card-logo" />
+              <img
+                src="./assets/images/credit-card.svg"
+                alt="credit-card-logo"
+              />
               <h3><a href="#">8380 2880 8028 8791 7435</a></h3>
             </div>
             <p class="legal_info">
@@ -236,15 +260,15 @@
           <a href="mailto:example.com@mail.com">
             <h4 class="email">
               <img
-                src="./images/icon-email.svg"
+                src="./assets/images/icon-email.svg"
                 alt="Email icon"
               />email@shelter.com
             </h4>
           </a>
           <a href="tel:+136745677554">
             <h4 class="phone">
-              <img src="./images/icon-phone.svg" alt="Phone icon" />+13 674 567
-              75 54
+              <img src="./assets/images/icon-phone.svg" alt="Phone icon" />+13
+              674 567 75 54
             </h4>
           </a>
         </div>
@@ -252,19 +276,23 @@
           <h3>We are waiting for your visit</h3>
           <a href="https://maps.google.com" target="_blank">
             <h4>
-              <img src="./images/icon-marker.png" alt="Icon marker" />1 Central
-              Street, Boston <br />
+              <img src="./assets/images/icon-marker.png" alt="Icon marker" />1
+              Central Street, Boston <br />
               (entrance from the store)
             </h4>
           </a>
           <a href="https://maps.google.com" target="_blank">
             <h4>
-              <img src="./images/icon-marker.png" alt="Icon marker" />18 South
-              Park, London
+              <img src="./assets/images/icon-marker.png" alt="Icon marker" />18
+              South Park, London
             </h4>
           </a>
         </div>
-        <img src="./images/footer-puppy.png" alt="Puppy" class="footer_img" />
+        <img
+          src="./assets/images/footer-puppy.png"
+          alt="Puppy"
+          class="footer_img"
+        />
       </div>
     </footer>
   </body>
