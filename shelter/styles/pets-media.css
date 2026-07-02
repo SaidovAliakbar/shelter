@@ -1,0 +1,109 @@
+@media (max-width: 1100px) {
+  .logo {
+    margin: 0;
+  }
+
+  header {
+    padding: 30px;
+  }
+
+  .pet_card_container {
+    margin: 0;
+  }
+
+  .footer_container {
+    margin: 0;
+    padding: 30px 0 0 0;
+    gap: 65px 60px;
+    justify-content: center;
+    gap: 65px;
+  }
+
+  .footer_img {
+    margin-inline: auto;
+  }
+
+  .contacts,
+  .address_content {
+    margin: 0;
+    max-height: 234px;
+  }
+
+  main {
+    gap: 40px;
+    padding: 81px 0 76px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger_menu,
+  .overlay {
+    display: block;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 630px) {
+  header {
+    padding: 30px 20px;
+  }
+
+  footer {
+    justify-content: normal;
+  }
+
+  .footer_container h2 {
+    text-align: center;
+    max-width: 270px;
+    margin-inline: auto;
+  }
+
+  .footer_container {
+    padding: 0;
+    margin: 28px 10px 0 10px;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .contacts {
+    padding: 0 11px;
+    align-items: center;
+    height: auto;
+    max-height: none;
+  }
+
+  .address_content {
+    gap: 40px;
+    height: auto;
+    max-height: none;
+  }
+
+  .footer_img {
+    width: 260px;
+    height: 269px;
+  }
+}
+
+@media (max-width: 400px) {
+  .controls {
+    gap: 10px;
+  }
+
+  .pets {
+    gap: 42px;
+  }
+
+  main {
+    padding: 42px 0;
+    gap: 42px;
+  }
+}
