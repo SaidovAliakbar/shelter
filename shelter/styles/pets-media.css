@@ -35,12 +35,6 @@
   }
 }
 
-@media (max-width: 830px) {
-  .pet_card:nth-last-child(-n + 2) {
-    display: none;
-  }
-}
-
 @media (max-width: 767px) {
   .burger_menu,
   .overlay {
@@ -102,10 +96,6 @@
 @media (max-width: 400px) {
   .controls {
     gap: 10px;
-  }
-
-  .pet_card:nth-last-child(-n + 5) {
-    display: none;
   }
 
   .pets {

@@ -261,9 +261,16 @@ main {
   margin: 0 auto;
 }
 
-.pet_card_container {
+.pet_card_container,
+.card_page {
   display: flex;
   flex-wrap: wrap;
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+.pet_card_container.fade {
+  opacity: 0;
 }
 
 .pets > h1 {
@@ -301,6 +308,15 @@ main {
   gap: 30px;
   letter-spacing: 0.06em;
   transition: 150ms;
+}
+
+.pet_card_container {
+  transition: opacity 200ms ease;
+}
+
+
+.pet_card_container.fade {
+  opacity: 0;
 }
 
 .pet_card:hover {
@@ -379,13 +395,21 @@ main {
   font-family: "Georgia";
 }
 
-.controls > .next,
-.controls > .last {
+.controls button {
   border: 2px solid var(--primary-color);
 }
 
+.controls path {
+  fill: #000;
+}
+
 .disabled {
+  pointer-events: none;
   cursor: not-allowed;
+  border: 2px solid #cdcdcd !important; 
+  path {
+    fill: #cdcdcd !important;
+  }
 }
 
 .controls > button:not(.disabled):hover {

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./styles/pets.css" />
     <link rel="stylesheet" href="./styles/pets-media.css" />
     <script src="./scripts/burger.js" defer></script>
+    <script type='module' src="./scripts/pagination.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pets</title>
@@ -51,8 +52,17 @@
             Our friends who <br />
             are looking for a house
           </h1>
-          <div class="pet_card_container">
+
+          <template class="pet_card_template">
             <div class="pet_card">
+              <img src="" alt="" />
+              <p></p>
+              <button>Learn more</button>
+            </div>
+          </template>
+
+          <div class="pet_card_container">
+            <!-- <div class="pet_card">
               <img src="./assets/images/pets-katrine.png" alt="Katrine" />
               <p>Katrine</p>
               <button>Learn more</button>
@@ -91,11 +101,11 @@
               <img src="./assets/images/pets-katrine-(2).png" alt="Freddie" />
               <p>Freddie</p>
               <button>Learn more</button>
-            </div>
+            </div> -->
           </div>
         </section>
         <div class="controls">
-          <button class="first_btn disabled">
+          <button class="first disabled">
             <svg
               width="24"
               height="11"
@@ -123,7 +133,7 @@
               />
             </svg>
           </button>
-          <button class="current_btn">1</button>
+          <button class="current_btn"></button>
           <button class="next">
             <svg
               width="10"
