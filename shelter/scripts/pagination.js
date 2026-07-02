@@ -10,7 +10,7 @@ const lastBtn = document.querySelector(".last");
 
 const currentPageBtn = document.querySelector(".current_btn");
 
-const pets = await getPets();
+export const pets = await getPets();
 
 let currentPage = 0;
 
@@ -53,14 +53,14 @@ function changeCardsOrder (cards, direction) {
 }
 
 function renderCards (cardsToRender) {
-  cardsToRender.forEach(card => {
+  cardsToRender.forEach((card, index) => {
     const cardElement = template.content.cloneNode(true)
 
     cardElement.querySelector("img").src = card.img;
     cardElement.querySelector("img").alt = card.name;
     cardElement.querySelector("p").textContent = card.name;
     
-    cardElement.querySelector("p").dataset.id = card.id;
+    cardElement.querySelector(".pet_card").dataset.id = index;
 
     container.appendChild(cardElement);
   })

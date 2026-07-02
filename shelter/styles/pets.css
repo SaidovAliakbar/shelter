@@ -418,6 +418,84 @@ main {
   cursor: pointer;
 }
 
+#dialog {
+  margin: auto;
+  border: 0;
+  width: 900px;
+  height: 500px;
+}
+
+.dialog_wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 29px;
+}
+
+.text_info {
+  display: flex;
+  padding: 50px 20px 88px 0;
+  flex-direction: column;
+}
+
+.text_info h2 {
+  font-size: 35px;
+  font-family: "Georgia";
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.text_info h3 {
+  font-size: 20px;
+  font-family: "Georgia";
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+}
+
+.text_info p {
+  font-size: 15px;
+  font-family: "Georgia";
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.text_info ul {
+  gap: 11px;
+  margin-left: 14px;
+}
+
+.dialog_wrapper img {
+  height: 100%;
+}
+
+.close_btn {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--primary-color);
+  position: absolute;
+  left: 820px;
+  top: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  transition: 150ms;
+}
+
+.close_btn:hover {
+  background-color: var(--primary-color);
+}
+
+.close_btn:active {
+  opacity: 0.8;
+}
+
 footer {
   background:
     url(../assets/images/noise_transparent.png),
